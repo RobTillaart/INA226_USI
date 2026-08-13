@@ -1,13 +1,13 @@
 //    FILE: INA226_USI.cpp
 //  AUTHOR: Rob Tillaart, J.P. Simoons
-// VERSION: based upon INA226 0.6.6
+// VERSION: 0.6.6 (sync with INA226 library)
 //    DATE: 2026-08-08
 // PURPOSE: Arduino library for INA226 power sensor for ATtiny
-//     URL: https://github.com/RobTillaart/INA226
+//     URL: https://github.com/RobTillaart/INA226_USI
 //
 //  Read the datasheet for the details
 //
-// Modified for use with ATtiny85 by J.P.Simoons - 8 augustus 2026 - mod 2 lines
+// Modified for use with ATtiny85 by J.P.Simoons - 8 Augustus 2026 - mod 2 lines
 
 
 #include "INA226_USI.h"

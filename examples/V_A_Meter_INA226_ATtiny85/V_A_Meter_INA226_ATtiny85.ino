@@ -1,15 +1,23 @@
-#include <avr/pgmspace.h> 
-#include "LiquidCrystal_attiny.h""
+//
+//    FILE: V_A_Meter_INA226_ATtiny85.ino
+//  AUTHOR: J.P. Simoons
+// PURPOSE: demo
+//     URL: https://github.com/RobTillaart/INA226_USI
+//
+//  need LiquidCrystal_attiny.h
+
+#include <avr/pgmspace.h>
+#include "LiquidCrystal_attiny.h"
 #include "INA226.h"
 
 #define LCD_ADDR 0x27                  // I2C address of LCD display
-#define LCD_WIDTH 8                    // Number of colums of LCD display
+#define LCD_WIDTH 8                    // Number of columns of LCD display
 #define LCD_HEIGHT 2                   // Number of rows of LCD display
 
 /* connection diagram ATtiny85:
  *         Reset PB5 1 +--V--+ 8 Vcc
  *               PB3 2 |     | 7 PB2 = I2C:SCL to LCD display & INA226
- *               PB4 3 |     | 6 PB1 
+ *               PB4 3 |     | 6 PB1
  *            Ground 4 +-----+ 5 PB0 = I2C:SDA to LCD display & INA226
  *
  * Note: Shunt * MAX_CURRENT must be smaller than 81,92 mV
@@ -26,7 +34,7 @@ float bus_voltage, current;
 /*
  * define objects
  */
-LiquidCrystal_I2C lcd(LCD_ADDR, LCD_WIDTH,LCD_HEIGHT); 
+LiquidCrystal_I2C lcd(LCD_ADDR, LCD_WIDTH,LCD_HEIGHT);
 INA226 INA(INA_ADDR);
  /*
  * Function prototype
@@ -38,15 +46,15 @@ void write_lcd(void);
 void setup()
 {
 //  lcd.begin();                                    /* standard LCD display */
-  lcd.init();                                     /* "ATtiny LCD Display": initialyse LCD */
-  lcd.backlight();                                /* turn on backlicht if not allready on */
+  lcd.init();                                     /* "ATtiny LCD Display": initialise LCD */
+  lcd.backlight();                                /* turn on backlight if not already on */
 //                           01234567
   sprintf_P(lcd_img[0],PSTR("VA meter"));
   sprintf_P(lcd_img[1],PSTR("  V1.0  "));
   write_lcd();
 //  Wire.begin();                                  /* already done by lcd.begin() */
 //  TinyWireM.begin();                             /* ATtiny: already done by lcd.init() */
-  if (!INA.begin() ) 
+  if (!INA.begin() )
   {
     delay(1000);
 //                             012345678
@@ -75,10 +83,10 @@ void loop()
  * split voltage into volts and milli volts for printing
  *    01234567
  *    xx.xx  V
- *      xxx mA 
- * 
+ *      xxx mA
+ *
  *    xx.xx  V
- *    x.xxx  A 
+ *    x.xxx  A
  */
   i_current = current + 0.5;          // convert to integer for printing
   bus_voltage *= 100.0;               //units of 100 mV
@@ -108,7 +116,7 @@ void loop()
  */
 void write_lcd()
 {
-  unsigned char i,j; 
+  unsigned char i,j;
   for (i=0;i<LCD_HEIGHT;i++)
   {
     lcd_img[i][LCD_WIDTH] = '\0';                     /* At Tiny I2C LCD Display - terminate string, not required */
@@ -123,4 +131,4 @@ void write_lcd()
 //    lcd.print(lcd_img[i]);                            /* Normal (I2C) LCD display - display line */
   }
   return;
-} 
+}

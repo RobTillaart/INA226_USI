@@ -1,7 +1,7 @@
 {
   "name": "INA226",
   "keywords": "power,ampere,voltage,volts,current",
-  "description": "Arduino library for INA226 power sensor",
+  "description": "Arduino library for INA226 power sensor for ATtiny",
   "authors":
   [
     {
@@ -13,11 +13,11 @@
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/RobTillaart/INA226.git"
+    "url": "https://github.com/RobTillaart/INA226_USI.git"
   },
   "version": "0.6.6",
   "license": "MIT",
   "frameworks": "*",
   "platforms": "*",
-  "headers": "INA226.h"
+  "headers": "INA226_USI.h"
 }

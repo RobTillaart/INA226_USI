@@ -1,7 +1,7 @@
 //
 //    FILE: unit_test_001.cpp
 //  AUTHOR: Rob Tillaart
-//    DATE: 2021-05-18
+//    DATE: 2026-08-12
 // PURPOSE: unit tests for the INA226_USI library
 //          https://github.com/RobTillaart/INA226_USI
 //          https://github.com/Arduino-CI/arduino_ci/blob/master/REFERENCE.md
