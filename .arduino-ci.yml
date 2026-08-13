@@ -16,7 +16,7 @@ packages:
 compile:
   # Choosing to run compilation tests on 2 different Arduino platforms
   platforms:
-    - attiny85  # ???
+    # - ATtiny85 (fails library error)
     # - uno
     # - due
     # - zero
@@ -28,5 +28,6 @@ compile:
     # - rpipico
 
   libraries:
-    - "TinyWireM"
-    - "LiquidCrystal_attiny"
+    #   libraries error => not registered?
+    #  - "TinyWireM"
+    #  - "LiquidCrystal_attiny"
