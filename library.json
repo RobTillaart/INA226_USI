@@ -1,5 +1,5 @@
 {
-  "name": "INA226",
+  "name": "INA226_USI",
   "keywords": "power,ampere,voltage,volts,current",
   "description": "Arduino library for INA226 power sensor for ATtiny",
   "authors":
