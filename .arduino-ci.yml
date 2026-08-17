@@ -31,7 +31,7 @@ platforms:
       flags:
 
 packages:
-  attiny:avr:
+  attiny:avr:1.0.2
     url: https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
 
 
