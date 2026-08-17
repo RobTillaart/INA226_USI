@@ -6,7 +6,7 @@
 //
 //  needs INA226_USI.h, TinyLiquidCrystal.h and TinyWireM.h to installed
 //
-// Version 1.1: replace LiquidCrystal_attiny.h by Tiny_LiquidCrystal.h
+// Version 1.1: replace LiquidCrystal_attiny_I2C.h by Tiny_LiquidCrystal.h
 //              use installed versions of INA226_USI and TinyWireM
 //
 #include <avr/pgmspace.h> 
