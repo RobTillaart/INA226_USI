@@ -22,8 +22,7 @@ packages:
 platforms:
   attiny85:
     board: attiny:avr:ATtinyX5:cpu=attiny85   # == fqbn
-    package: attiny:avr
-    # version: "1.0.2"
+    package: attiny:avr:1.0.2
     gcc:
       features:
       defines:
