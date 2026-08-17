@@ -79,3 +79,9 @@ compile:
     #   libraries not registered?
     - "TinyWireM"
     - "TinyLiquidCrystal_I2C"
+
+unittest:
+  libraries:
+    #   libraries not registered?
+    - "TinyWireM"
+    - "TinyLiquidCrystal_I2C"
