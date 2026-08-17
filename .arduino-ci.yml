@@ -22,7 +22,8 @@ packages:
 platforms:
   attiny85:
     board: attiny:avr:ATtinyX5:cpu=attiny85   # == fqbn
-    package: attiny:avr:1.0.2
+    package: attiny:avr
+    version: 1.0.2
     gcc:
       features:
       defines:
@@ -31,7 +32,7 @@ platforms:
       flags:
 
 packages:
-  attiny:avr:1.0.2
+  attiny:avr
     url: https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
 
 
