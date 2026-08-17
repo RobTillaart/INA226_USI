@@ -81,6 +81,8 @@ compile:
     - "TinyLiquidCrystal_I2C"
 
 unittest:
+  platforms:
+    - attiny85opti
   libraries:
     #   libraries not registered?
     - "TinyWireM"
