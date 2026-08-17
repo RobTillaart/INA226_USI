@@ -22,8 +22,8 @@ packages:
 platforms:
   attiny85:
     board: attiny:avr:ATtinyX5   # == fqbn
-    release: 1.0.2
     package: attiny:avr
+    version: 1.0.2
     gcc:
       features:
       defines:
