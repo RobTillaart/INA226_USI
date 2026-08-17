@@ -14,21 +14,38 @@ packages:
     url: https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 
 ################################
+#
+# platforms:
+  # ATtiny85:
+    # board: attiny:attiny:ATtiny85
+    # package: attiny:attiny
+    # gcc:
+      # features:
+      # defines:
+        # - ARDUINO_attiny
+      # warnings:
+      # flags:
+
+# packages:
+  # attiny:attiny:
+    # url: https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
+
 
 platforms:
   ATtiny85:
-    board: attiny:attiny:ATtiny85
-    package: attiny:attiny
+    board: ATTinyCore:ATTinyCore:ATtiny85
+    package: ATTinyCore:ATTinyCore:
     gcc:
       features:
       defines:
-        - ARDUINO_attiny
+        - ARDUINO_ARCH_ATTINYCORE
       warnings:
       flags:
 
 packages:
-  attiny:attiny:
-    url: https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
+  ATTinyCore:ATTinyCore:
+    url: https://drazzy.com/package_drazzy.com_index.json
+
 
 
 ################################
