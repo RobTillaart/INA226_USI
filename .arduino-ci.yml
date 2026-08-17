@@ -20,7 +20,7 @@ packages:
 #  attiny85 - fails
 #
 platforms:
-  ATtiny85:
+  attiny85:
     board: attiny:avr:attiny85  # == fqbn
     package: attiny:avr
     gcc:
@@ -62,7 +62,7 @@ packages:
 compile:
   # Choosing to run compilation tests on 2 different Arduino platforms
   platforms:
-    - ATtiny85
+    - attiny85
     # - attiny85opti
     # - uno
     # - due
