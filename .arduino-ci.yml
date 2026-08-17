@@ -23,7 +23,7 @@ platforms:
   attiny85:
     board: attiny:avr:ATtinyX5   # == fqbn
     package: attiny:avr
-    version: 1.0.2
+    version: "1.0.2"
     gcc:
       features:
       defines:
