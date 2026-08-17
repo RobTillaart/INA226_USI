@@ -40,20 +40,20 @@ packages:
 #
 #  attiny85 - works
 #
-platforms:
-  attiny85opti:
-    board: ATTinyCore:avr:attinyx5opti
-    package: ATTinyCore:avr
-    gcc:
-      features:
-      defines:
-        - ARDUINO_AVR_ATTINYX5
-      warnings:
-      flags:
+# platforms:
+  # attiny85opti:
+    # board: ATTinyCore:avr:attinyx5opti
+    # package: ATTinyCore:avr
+    # gcc:
+      # features:
+      # defines:
+        # - ARDUINO_AVR_ATTINYX5
+      # warnings:
+      # flags:
 
-packages:
-  ATTinyCore:avr:
-    url: https://drazzy.com/package_drazzy.com_index.json
+# packages:
+  # ATTinyCore:avr:
+    # url: https://drazzy.com/package_drazzy.com_index.json
 
 
 
@@ -63,7 +63,7 @@ compile:
   # Choosing to run compilation tests on 2 different Arduino platforms
   platforms:
     - ATtiny85
-    - attiny85opti
+    # - attiny85opti
     # - uno
     # - due
     # - zero
