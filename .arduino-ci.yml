@@ -18,20 +18,20 @@ packages:
 #  attiny85 fails to install in build-CI
 #  tried two configurations.
 #
-# platforms:
-  # attiny85:
-    # board: attiny:attiny:attiny85
-    # package: attiny:attiny
-    # gcc:
-      # features:
-      # defines:
-        # - ARDUINO_attiny
-      # warnings:
-      # flags:
+platforms:
+  attinyX5:
+    board: attiny:avr:attinyX5
+    package: attiny:avr
+    gcc:
+      features:
+      defines:
+        - ARDUINO_attiny
+      warnings:
+      flags:
 
-# packages:
-  # attiny:attiny:
-    # url: https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
+packages:
+  attiny:avr:
+    url: https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
 
 
 platforms:
@@ -56,6 +56,7 @@ packages:
 compile:
   # Choosing to run compilation tests on 2 different Arduino platforms
   platforms:
+    - attinyX5
     - attiny85opti
     # - uno
     # - due
