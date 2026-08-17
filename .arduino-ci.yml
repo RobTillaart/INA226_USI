@@ -19,8 +19,8 @@ packages:
 #  tried two configurations.
 #
 platforms:
-  attinyX5:
-    board: attiny:avr:attinyX5
+  ATtinyX5:
+    board: attiny:avr:ATtinyX5
     package: attiny:avr
     gcc:
       features:
@@ -56,7 +56,7 @@ packages:
 compile:
   # Choosing to run compilation tests on 2 different Arduino platforms
   platforms:
-    - attinyX5
+    - ATtinyX5
     - attiny85opti
     # - uno
     # - due
