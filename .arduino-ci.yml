@@ -16,7 +16,7 @@ packages:
 ################################
 
 platforms:
-  attiny85:
+  ATtiny85:
     board: attiny:attiny:ATtiny85
     package: attiny:attiny
     gcc:
@@ -36,7 +36,7 @@ packages:
 compile:
   # Choosing to run compilation tests on 2 different Arduino platforms
   platforms:
-    - attiny85  #  not supported
+    - ATtiny85  #  not supported
     # - uno
     # - due
     # - zero
