@@ -21,7 +21,7 @@ packages:
 #
 platforms:
   attiny85:
-    board: attiny:avr:attiny85  # == fqbn
+    board: attiny:avr:ATtinyX5  # == fqbn
     package: attiny:avr
     gcc:
       features:
