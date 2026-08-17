@@ -13,26 +13,33 @@ packages:
   rp2040:rp2040:
     url: https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 
+
+
 ################################
 #
-#  attiny85 - 2 options.
+#  attiny85 - fails
 #
-# platforms:
-  # ATtinyX5:
-    # board: attiny:avr:ATtinyX5
-    # package: attiny:avr
-    # gcc:
-      # features:
-      # defines:
-        # - ARDUINO_attiny
-      # warnings:
-      # flags:
+platforms:
+  ATtiny85:
+    board: attiny:avr:ATtiny85
+    package: attiny:avr
+    gcc:
+      features:
+      defines:
+        - ARDUINO_attiny
+      warnings:
+      flags:
 
-# packages:
-  # attiny:avr:
-    # url: https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
+packages:
+  attiny:avr:
+    url: https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
 
 
+
+################################
+#
+#  attiny85 - works
+#
 platforms:
   attiny85opti:
     board: ATTinyCore:avr:attinyx5opti
@@ -55,7 +62,7 @@ packages:
 compile:
   # Choosing to run compilation tests on 2 different Arduino platforms
   platforms:
-    - ATtinyX5
+    - ATtiny85
     - attiny85opti
     # - uno
     # - due
