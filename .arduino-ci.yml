@@ -34,7 +34,7 @@ packages:
 platforms:
   ATtiny85:
     board: ATTinyCore:ATTinyCore:ATtiny85
-    package: ATTinyCore:
+    package: ATTinyCore:ATTinyCore
     gcc:
       features:
       defines:
@@ -43,7 +43,7 @@ platforms:
       flags:
 
 packages:
-  ATTinyCore:
+  ATTinyCore:ATTinyCore:
     url: https://drazzy.com/package_drazzy.com_index.json
 
 
