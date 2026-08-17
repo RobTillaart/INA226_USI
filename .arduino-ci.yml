@@ -32,8 +32,8 @@ packages:
 
 
 platforms:
-  ATtiny85:
-    board: ATTinyCore:ATTinyCore:ATtiny85
+  attiny85:
+    board: ATTinyCore:ATTinyCore:attiny85
     package: ATTinyCore:ATTinyCore
     gcc:
       features:
@@ -53,7 +53,7 @@ packages:
 compile:
   # Choosing to run compilation tests on 2 different Arduino platforms
   platforms:
-    - ATtiny85
+    - attiny85
     # - uno
     # - due
     # - zero
