@@ -38,7 +38,7 @@ platforms:
     gcc:
       features:
       defines:
-        - ARDUINO_ARCH_ATTINYCORE
+        - ARDUINO_AVR_ATTINYX5
       warnings:
       flags:
 
