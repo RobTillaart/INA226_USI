@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [0.6.7] - 2026-xx-xx
+- fix build for ATtiiny85 (ATtinyCore)
+- 
+
+
 ## [0.6.6] - 2026-08-12
 - initial version based upon INA226 version 0.6.6
   Kudos to Peter Simoons
