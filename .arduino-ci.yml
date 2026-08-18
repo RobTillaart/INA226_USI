@@ -13,10 +13,58 @@ packages:
   rp2040:rp2040:
     url: https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 
+
+
+################################
+#
+#  attiny85 - fails
+#
+# platforms:
+  # attiny85:
+    # board: attiny:avr:ATtinyX5:cpu=attiny85   # == fqbn
+    # package: attiny:avr
+    # version: 1.0.2
+    # gcc:
+      # features:
+      # defines:
+        # - ARDUINO_attiny
+      # warnings:
+      # flags:
+
+# packages:
+  # attiny:avr
+    # url: https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
+
+
+
+################################
+#
+#  attiny85 - works
+#
+platforms:
+  attiny85opti:
+    board: ATTinyCore:avr:attinyx5opti
+    package: ATTinyCore:avr
+    gcc:
+      features:
+      defines:
+        - ARDUINO_AVR_ATTINYX5
+      warnings:
+      flags:
+
+packages:
+  ATTinyCore:avr:
+    url: https://drazzy.com/package_drazzy.com_index.json
+
+
+
+################################
+
 compile:
   # Choosing to run compilation tests on 2 different Arduino platforms
   platforms:
-    # - ATtiny85 (fails library error)
+    # - attiny85
+    - attiny85opti
     # - uno
     # - due
     # - zero
@@ -28,6 +76,7 @@ compile:
     # - rpipico
 
   libraries:
-    #   libraries error => not registered?
-    #  - "TinyWireM"
-    #  - "LiquidCrystal_attiny"
+    #   libraries not registered?
+    - "TinyWireM"
+    - "TinyLiquidCrystal_I2C"
+
